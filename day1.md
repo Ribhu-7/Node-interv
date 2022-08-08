@@ -1,6 +1,7 @@
 DAY 1:
 
 What is NPM?
+
 NPM stands for the node package manager, npm is used for node dependency management. Most of the time, we use npm as a server-side node dependency tool.
 NPM gets installed with NodeJs installation.
 NPM uses nested dependencies, so we can use different versions of any module in our code.
@@ -10,7 +11,10 @@ It is the default package manager for the JavaScript runtime environment Node.js
 Help to manage a project’s dependencies.
 npm is installed with Node automatically.
 npm: NPM generates a ‘package-lock.json’ file. the package-lock will generate the same node_modules folder for different npm versions.
+
+
 What are the modules in Node.js?
+
 In Node.js, Modules are the blocks of encapsulated code that communicates with an external application on the basis of their related functionality.
 Modules can be a single file or a collection of multiples files/folders.
 The reason programmers are heavily reliant on modules is because of their re-usability as well as the ability to break down a complex piece of code into manageable chunks.
@@ -28,7 +32,9 @@ Example:
 
 npm install express
 
+
 What is the purpose of the module.exports?
+
 Module.exports are the instruction that tells Node. js which bits of code (functions, objects, strings, etc.) to “export” from a given file so other files are allowed to access the exported code.
 The module.exports is actually a property of the module object in node.js. module. Exports is the object that is returned to the require() call. By module.exports, we can export functions, objects, and their references from one file and can use them in other files by importing them by require() method.
 easy to maintain and manage the code base in different modules.
@@ -59,14 +65,18 @@ default export:- Using Named and Default Exports at the same time: It is possibl
 // test.js // while importing x in test.js import y from './module'; // note that y is used import x instead of // import x, because x was default export console.log(y);
 // output will be 4
 
+
 How do you import any module in Node.js
+
 Importing functions or modules enhances the reusability of code.
 
 Importing a Module: We need to import the module to use the functions defined in the imported module in another file. The result returned by require() is stored in a variable which is used to invoke the functions using the dot notation.
 
 const f = require('./func')
 
+
 What are the different types of HTTP requests?
+
 HTTP (Hypertext Transfer Protocol) specifies a collection of request methods to specify what action is to be performed on a particular resource. The most commonly used HTTP request methods are GET, POST, PUT, PATCH, and DELETE. These are equivalent to the CRUD operations (create, read, update, and delete).
 GET: GET request is used to read/retrieve data from a web server. GET returns an HTTP status code of 200 (OK) if the data is successfully retrieved from the server.
 
@@ -78,7 +88,9 @@ PATCH: PATCH is similar to PUT request, but the only difference is, it modifies 
 
 DELETE: A DELETE request is used to delete the data on the server at a specified location.
 
+
 Explain the concept of middleware in Node.js. Explain CORS
+
 Express.js is a routing and Middleware framework for handling the different routing of the webpage and it works between the request and response cycle.
 
 Middleware gets executed after the server receives the request and before the controller actions send the response.
@@ -99,7 +111,9 @@ function httpGetAction(urlLink) { var xmlHttp = new XMLHttpRequest(); xmlHttp.op
 
 npm i CORS
 
+
 What is Express. how it helps you to create a backend application
+
 Express.js: Express is a small framework that sits on top of Node.js’s web server functionality to simplify its APIs and add helpful new features. It makes it easier to organize your application’s functionality with middle ware and routing. It adds helpful utilities to Node.js’s HTTP objects. It facilitates the rendering of dynamic HTTP objects.
 
 More features than Node.js
@@ -114,11 +128,15 @@ Uses middleware for the arrangement of functions systematically server-side.
 
 import by const express = require ("express")
 
+
 Explain min 5 status codes gets used in Backend development
+
 An HTTP status code is a message a website's server sends to the browser to indicate whether or not that request can be fulfilled. Status codes specs are set by the W3C. Status codes are embedded in the HTTP header of a page to tell the browser the result of its request.
 102 PROCESSING Processing 200 OK OK 400 BAD_REQUEST Bad Request 401 UNAUTHORIZED Unauthorized 402 PAYMENT_REQUIRED Payment Required 403 FORBIDDEN Forbidden 404 NOT_FOUND Not Found 500 INTERNAL_SERVER_ERROR Internal Server Error 503 - Service Unavailable
 
+
 What is node.js ?
+
 Node.js: Node.js is an open source and cross-platform runtime environment for executing JavaScript code outside of a browser. You need to remember that NodeJS is not a framework and it’s not a programming language. Most of the people are confused and understand it’s a framework or a programming language. We often use Node.js for building back-end services like APIs like Web App or Mobile App. It’s used in production by large companies such as Paypal, Uber, Netflix, Walmart and so on.
 
 Node.js is a platform for building the i/o applications which are server-side event-driven and made using JavaScript.
@@ -135,7 +153,9 @@ Routing is not provided.
 
 No Middleware
 
+
 Difference between HTTP and HTTPS
+
 HTTPS stands for Hyper Text Transfer Protocol Secure. It is highly advanced and secure version of HTTP. It uses the port no. 443 for Data Communication.
 
 HTTP also allows you to create a secure encrypted connection between the server and the browser. It offers the bi-directional security of Data.
@@ -146,7 +166,9 @@ HTTP It is hypertext transfer protocol. It is less secure as the data can be vul
 
 HTTPS Vulnerable to hackers It Is highly secure as the data is encrypted before it is seen across a network. Slower than HTTP HTTPS requires SSL certificate. HTTPS scrambles the data before transmission. If the website needs to collect the private information such as credit card number, then it is a more secure protocol. HTTPs URLs begin with https:// It was use port 443 by default. It is designed to prevent hackers from accessing critical information. It is secure against such attacks. It is hypertext transfer protocol with secure.
 
+
 What are JWT tokens?
+
 JSON web token (JWT), pronounced "jot", is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. Again, JWT is a standard, meaning that all JWTs are tokens, but not all tokens are JWTs.
 ex:-instagram
 when we loggin somewhere , they provide us a unique token.which helps us to access through it
